@@ -61,8 +61,8 @@ void quicksort (float* arr, int size)
     pivot = size-1;
     
     // put all values less than the pivot value after the pivot
-    for (int i=0; i < size-1;){
-      if ( (i < pivot) && (arr[i] < arr[pivot]) ){
+    for (int i=0; i < pivot;){
+      if ( (arr[i] < arr[pivot]) ){
         swp (arr[i], arr[pivot-1]);
         swp (arr[pivot-1], arr[pivot]);
         pivot--;
